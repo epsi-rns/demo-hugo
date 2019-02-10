@@ -1,0 +1,47 @@
+# Helper for related links
+
+# just copy the result manually
+# from /pages/archives/index.txt
+# to folder data/archives.yml
+
+
+- id: 18010935
+  title: "My Mobile Post"
+  url: /frontend/2018/01/09/mobile-post/
+  
+- id: 18010735
+  title: "My Hugo Post"
+  url: /ssg/2018/01/07/hugo-post/
+  
+- id: 18010535
+  title: "My Design Post"
+  url: /frontend/2018/01/05/design-post/
+  
+- id: 14050735
+  title: "My Framework Post"
+  url: /backend/2014/05/07/framework-post/
+  
+- id: 14020635
+  title: "My Frontend Post"
+  url: /frontend/2014/02/06/frontend-post/
+  
+- id: 14020435
+  title: "My Backend Post"
+  url: /backend/2014/02/04/backend-post/
+  
+- id: 14020135
+  title: "My Database Post"
+  url: /backend/2014/02/01/database-post/
+  
+- id: 14010735
+  title: "My SSG Post"
+  url: /ssg/2014/01/07/ssg-post/
+  
+- id: 14010335
+  title: "My Code Post"
+  url: /code/2014/01/03/code-post/
+  
+- id: 14010246
+  title: "A Simple Blog Post Example"
+  url: /backend/2014/01/02/content-example/
+  

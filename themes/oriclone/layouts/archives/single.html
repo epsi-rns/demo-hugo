@@ -1,0 +1,33 @@
+{{ define "main" }}
+<main role="main" class="col-md-8">
+<div class="container-fluid m-3 m-sm-0 p-3
+            bg-light rounded border border-dark shadow-hover">
+  <header>
+    <h2>{{ .Title | default .Site.Title }}</h2>
+  </header>
+
+  <article>
+    {{ .Content }}
+  </article>
+
+  {{ $posts := where .Site.Pages "Type" "post" }}
+  <section id="archive">
+    {{ range ($posts.GroupByDate "2006") }}
+      {{ partial "summary-by-month.html" . }}
+    {{ end }}
+  </section>
+</div>
+</main>
+{{ end }}
+
+{{ define "aside" }}
+  <aside class="col-md-4">
+    {{ partial "card/affiliates.html" . }}
+    {{ partial "card/tags.html" (dict "taxonomies" .Site.Taxonomies "view_tag_type" "before") }}
+    {{ partial "card/recent-posts.html" . }}
+  </aside>
+{{ end }}
+
+{{ define "yaosb" }}
+<!-- no yaosb site image -->
+{{ end }}

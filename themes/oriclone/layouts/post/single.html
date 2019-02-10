@@ -1,0 +1,44 @@
+{{ define "main" }}
+  <main role="main" class="col-md-8">
+    <div id="sitedesc_image"></div>
+
+    <div class="blog-main p-3 mb-3 stripe--{{ .Page.Date.Format "01" }}
+                bg-white rounded border border-dark shadow-hover">
+      <div class="blog-post" 
+           itemscope itemtype="http://schema.org/BlogPosting">
+        {{ partial "post/header.html" . }}
+
+        <article class="main-content" itemprop="articleBody">
+          {{- with .Page.Params.toc -}}
+          {{ partial (print . ".html") . }}
+          <br/>
+          {{- end -}}
+
+          {{ .Content }}
+        </article>
+
+        {{ partial "post/navigation.html" . }}
+      </div><!-- /.blog-post -->
+    </div><!-- /.blog-main -->
+
+    {{ partial "post/footer.html" . }}
+    {{/* partial "service-disqus-comments.html" . */}}
+  </main>
+{{ end }}
+
+{{ define "aside" }}
+  <aside class="col-md-4">   
+    {{ partial "card/friends.html" . }}
+    {{ partial "card/related-posts.html" . }}
+
+    {{ partial "card/categories.html" . }}
+    {{ partial "card/archives.html" . }}
+
+    {{ partial "card/tags.html" (dict "taxonomies" .Site.Taxonomies "view_tag_type" "before") }}
+    {{ partial "card/recent-posts.html" . }}
+  </aside>
+{{ end }}
+
+{{ define "yaosb" }}
+<!-- no yaosb site image -->
+{{ end }}

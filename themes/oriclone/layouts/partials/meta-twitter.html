@@ -1,0 +1,10 @@
+
+    <meta name="twitter:title" content="{{ .Title | default .Site.Title }}">
+
+  {{- if .Page.Params.Excerpt }}
+    <meta name="twitter:description" content="{{ .Page.Params.Excerpt }}">
+  {{- end }}
+
+  {{- if .Site.Data.owner.twitter }}
+    <meta name="twitter:site" content="@{{ .Site.Data.owner.twitter }}">
+  {{- end }}

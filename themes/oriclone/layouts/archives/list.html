@@ -1,0 +1,51 @@
+{{ define "main" }}
+<main role="main" class="col-md-8">
+<div class="container-fluid m-3 m-sm-0 p-3
+            bg-light rounded border border-dark shadow-hover">
+  <header>
+    <h2>{{ .Title | default .Site.Title }}</h2>
+  </header>
+
+  <article>
+    {{ .Content }}
+  </article>
+
+  {{ $paginator := .Paginate (where .Site.Pages "Type" "post") }}
+  {{ partial "pagination/06-screenreader.html" (dict "p" $paginator "s" .Scratch) }}
+  <section id="archive">
+  <div class="post-list">
+    {{ range $paginator.Pages }}
+      {{ partial "summary-blog-list.html" . }}
+    {{ end }}
+  </div>
+  </section>
+
+{{/*
+  You may choose one of our pagination:
+
+  {{ partial "pagination/01-simple.html" (dict "p" $paginator) }}
+  {{ partial "pagination/02-number.html" (dict "p" $paginator) }}
+  {{ partial "pagination/03-adjacent.html" (dict "p" $paginator "s" .Scratch) }}
+  {{ partial "pagination/04-indicator.html" (dict "p" $paginator "s" .Scratch) }}
+  {{ partial "pagination/05-responsive.html" (dict "p" $paginator "s" .Scratch) }}
+  {{ partial "pagination/06-screenreader.html" (dict "p" $paginator "s" .Scratch) }}
+*/}}
+
+  <div class="d-none d-sm-block">
+  {{ partial "pagination/01-simple.html" (dict "p" $paginator) }}
+  </div>
+</div>
+</main>
+{{ end }}
+
+{{ define "aside" }}
+  <aside class="col-md-4">
+    {{ partial "card/recent-posts.html" . }}
+    {{ partial "card/tags.html" (dict "taxonomies" .Site.Taxonomies "view_tag_type" "before") }}
+    {{ partial "card/affiliates.html" . }}
+  </aside>
+{{ end }}
+
+{{ define "yaosb" }}
+<!-- no yaosb site image -->
+{{ end }}
