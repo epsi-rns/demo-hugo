@@ -3627,8 +3627,8 @@ readers do not read off random characters that represent icons */
   font-family: 'Font Awesome 5 Free';
   font-style: normal;
   font-weight: 900;
-  src: url("/demo-hugo/assets/vendors/font-awesome-5/fa-solid-900.eot");
-  src: url("/demo-hugo/assets/vendors/font-awesome-5/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("/demo-hugo/assets/vendors/font-awesome-5/fa-solid-900.woff2") format("woff2"), url("/demo-hugo/assets/vendors/font-awesome-5/fa-solid-900.woff") format("woff"), url("/demo-hugo/assets/vendors/font-awesome-5/fa-solid-900.ttf") format("truetype"), url("/demo-hugo/assets/vendors/font-awesome-5/fa-solid-900.svg#fontawesome") format("svg"); }
+  src: url("/assets/vendors/font-awesome-5/fa-solid-900.eot");
+  src: url("/assets/vendors/font-awesome-5/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("/assets/vendors/font-awesome-5/fa-solid-900.woff2") format("woff2"), url("/assets/vendors/font-awesome-5/fa-solid-900.woff") format("woff"), url("/assets/vendors/font-awesome-5/fa-solid-900.ttf") format("truetype"), url("/assets/vendors/font-awesome-5/fa-solid-900.svg#fontawesome") format("svg"); }
 .fa,
 .fas {
   font-family: 'Font Awesome 5 Free';
@@ -3642,8 +3642,8 @@ readers do not read off random characters that represent icons */
   font-family: 'Font Awesome 5 Brands';
   font-style: normal;
   font-weight: normal;
-  src: url("/demo-hugo/assets/vendors/font-awesome-5/fa-brands-400.eot");
-  src: url("/demo-hugo/assets/vendors/font-awesome-5/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("/demo-hugo/assets/vendors/font-awesome-5/fa-brands-400.woff2") format("woff2"), url("/demo-hugo/assets/vendors/font-awesome-5/fa-brands-400.woff") format("woff"), url("/demo-hugo/assets/vendors/font-awesome-5/fa-brands-400.ttf") format("truetype"), url("/demo-hugo/assets/vendors/font-awesome-5/fa-brands-400.svg#fontawesome") format("svg"); }
+  src: url("/assets/vendors/font-awesome-5/fa-brands-400.eot");
+  src: url("/assets/vendors/font-awesome-5/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("/assets/vendors/font-awesome-5/fa-brands-400.woff2") format("woff2"), url("/assets/vendors/font-awesome-5/fa-brands-400.woff") format("woff"), url("/assets/vendors/font-awesome-5/fa-brands-400.ttf") format("truetype"), url("/assets/vendors/font-awesome-5/fa-brands-400.svg#fontawesome") format("svg"); }
 .fab {
   font-family: 'Font Awesome 5 Brands'; }
 
