@@ -1,0 +1,2 @@
+# demo-hugo
+netlify test
