@@ -1,6 +1,6 @@
 # A Hugo Site Example Using Oriclone Theme
 
-baseURL      = "http://epsi-rns.gitlab.io/"
+baseURL      = "https://vigorous-swirles-2642fd.netlify.com/"
 languageCode = "en-us"
 title        = "Yet Another Open Source Blog"
 theme        = "oriclone"
